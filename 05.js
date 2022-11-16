@@ -14,7 +14,13 @@ function pluck(array, propiedad) {
   // Pista: es una buena oportunidad para usar map.
 
   // Tu código acá:
+  let arr = [];
+  
+  for (let i = 0; i < array.length; i++) {
+    arr.push(array[i][propiedad]); // propiedad == name y/o price
+  }
 
+  return arr;
 }
 
 // No modifiques nada debajo de esta linea //
